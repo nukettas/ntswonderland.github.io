@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;300;400;500;600;700&family=Montserrat:wght@100;400;500;800;900&display=swap");
+
+:root {
+    --primary-color: #c72727;
+    --secondary-color: #f99500;
+    --light-color: #f3f3f3;
+    --dark-color: #79e0ee;
+    --max-width: 1100px;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  /* Navigation */
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  #main-nav {
+    background: transparent;
+    position: sticky;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    /* margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 1.5rem; */
+  }
+  
+  #main-nav .container {
+    display: grid;
+    grid-template-columns: 3fr 3fr 1fr;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #main-nav .logo {
+    width: 150px;
+    border-radius: 50%;
+  }
+  
+  #main-nav ul {
+    display: flex;
+  }
+
+  #main-nav i {
+    color: #071952;
+  }
+  
+  #main-nav ul li a {
+    padding: 0.5rem;
+    margin-right: 1.5rem;
+    justify-self: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #071952;
+  }
+  
+  #main-nav ul li a.current {
+    color: #071952;
+  }
+  
+  #main-nav ul li a:hover {
+    color: var(--dark-color);
+  }
+  
+  #main-nav .social {
+    align-items: center;
+    justify-self: center;
+  }
+  
+  #main-nav .social i {
+    color: #071952;
+    margin-right: 1.5rem;
+  }
+  
+  #main-nav .social i:hover {
+    color: var(--dark-color);
+  }
+
+.text-container {
+  margin-top: 5rem;
+  margin-left: 6.5rem;
+  max-width: 30rem;
+}
+
+.text-container h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #071952;
+}
+
+.card h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #071952;
+}
+
+  /* Contact Me Section */
+
+  input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 10px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+  }
+  
+  
+  input[type=submit] {
+    background: linear-gradient(to left top, #031a9a, #8b53ff);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  input[type=submit]:hover {
+    background-color: #94ADD7;
+  }
+  
+ 
+  .form-container {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    margin: 2rem 0;
+    grid-gap: 1.5rem;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 100px;
+  }
+
+
+  .card {
+    background: #fff;
+    padding: 1rem;
+  }
+
+  .list li {
+    padding: .5rem 0;
+    border-bottom: #555 dotted 1px;
+    width: 90%;
+  }
+  
+  .list li a:hover {
+    color: var(--dark-color) !important;
+  }
+
+  aside {
+    float: right;
+    max-width: 15rem;
+  }
+
+  aside a {
+    color: black;
+  }
+
+  /* Footer */
+  
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 3rem;
+  }
+  
+  footer .social {
+    display: flex;
+    justify-content: end;
+  }
+  
+  footer .social i {
+    color: #071952;
+    margin-right: 1rem;
+  }
+  
+  footer .social i:hover {
+    color: var(--dark-color);
+  }
+
+  @media screen and (max-width: 600px) {
+  
+    footer {
+      grid-template-columns: 1fr;
+    }
+  
+  }

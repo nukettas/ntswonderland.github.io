@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;300;400;500;600;700&family=Montserrat:wght@100;400;500;800;900&display=swap");
+
+:root {
+    --primary-color: #c72727;
+    --secondary-color: #f99500;
+    --light-color: #f3f3f3;
+    --dark-color: #79e0ee;
+    --max-width: 1100px;
+  }
+
+  .category {
+    --friendship-color: #7286d3;
+    --drama-color: #e5e0ff;
+    --romance-color: #b9f3fc;
+    --adult-color: #fd8a8a;
+    --toxicity-color: #65647c;
+    --confrontation-color: #8ea7e9;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  /* Navigation */
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  #main-nav {
+    background: transparent;
+    position: sticky;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    /* margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 1.5rem; */
+  }
+  
+  #main-nav .container {
+    display: grid;
+    grid-template-columns: 3fr 3fr 1fr;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #main-nav .logo {
+    width: 150px;
+    border-radius: 50%;
+  }
+  
+  #main-nav ul {
+    display: flex;
+  }
+
+  #main-nav i {
+    color: #071952;
+  }
+  
+  #main-nav ul li a {
+    padding: 0.5rem;
+    margin-right: 1.5rem;
+    justify-self: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #071952;
+  }
+  
+  #main-nav ul li a.current {
+    color: #071952;
+  }
+  
+  #main-nav ul li a:hover {
+    color: var(--dark-color);
+  }
+  
+  #main-nav .social {
+    align-items: center;
+    justify-self: center;
+  }
+  
+  #main-nav .social i {
+    color: #071952;
+    margin-right: 1rem;
+  }
+  
+  #main-nav .social i:hover {
+    color: var(--dark-color);
+  }
+  
+  /* Article Section */
+
+  .page-container {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    margin: 2rem 0;
+    grid-gap: 1.5rem;
+  }
+  
+  .page-container > *:first-child {
+    grid-row: 1 / span 3;
+  }
+
+  .container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+  }
+  
+  .category {
+    display: inline-block;
+    color: #fff;
+    font-size: 0.55rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0.6rem;
+    border-radius: 15px;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* .category-friendship { background: var(--friendship-color) }
+  .category-romance { background: var(--romance-color) } */
+  .category-friendship {
+    background: var(--friendship-color);
+  }
+  .category-drama {
+    background: var(--drama-color);
+  }
+  .category-romance {
+    background: var(--romance-color);
+  }
+  .category-adult {
+    background: var(--adult-color);
+  }
+  .category-toxicity {
+    background: var(--toxicity-color);
+  }
+  .category-confrontation {
+    background: var(--confrontation-color);
+  }
+  
+
+  img {
+    width: 100%;
+  }
+  
+  
+  .card {
+    background: #fff;
+    padding: 1rem;
+  }
+  
+  /* .bg-dark h1,
+  .bg-dark h2,
+  .bg-dark h3,
+  .bg-dark a,
+  .bg-primary h1,
+  .bg-primary h2,
+  .bg-primary h3,
+  .bg-primary a,
+  .bg-secondary h1,
+  .bg-secondary h2,
+  .bg-secondary h3,
+  .bg-secondary a {
+    color: #fff;
+  } */
+
+  .l-heading {
+    font-size: 3rem;
+  }
+  
+  .list li {
+    padding: .5rem 0;
+    border-bottom: #555 dotted 1px;
+    width: 90%;
+  }
+  
+  .list li a:hover {
+    color: var(--dark-color) !important;
+  }
+
+.articles-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+  
+.articles-container > *:first-child,
+.articles-container > *:last-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    grid-column: 1 / span 2;
+  }
+  
+.articles-container > *:last-child {
+    grid-column: 2 / span 2;
+  }
+  
+  #article .meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eee;
+    padding: 0.5rem;
+  }
+  
+  #article .meta .category {
+    margin-top: 0.4rem;
+  }
+
+  aside a {
+    color: black;
+  }
+  
+  
+  /* Footer */
+  
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 3rem;
+  }
+  
+  footer .social {
+    display: flex;
+    justify-content: end;
+  }
+  
+  footer .social i {
+    color: #071952;
+    margin-right: 1rem;
+  }
+  
+  footer .social i:hover {
+    color: var(--dark-color);
+  }
+
+  @media screen and (max-width: 600px) {
+  
+    footer {
+      grid-template-columns: 1fr;
+    }
+  
+    .aboutme-container {
+      grid-template-columns: 1fr;
+    }
+  }

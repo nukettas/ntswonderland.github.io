@@ -1,0 +1,504 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;300;400;500;600;700&family=Montserrat:wght@100;400;500;800;900&display=swap");
+
+:root {
+  --primary-color: #c72727;
+  --secondary-color: #f99500;
+  --light-color: #f3f3f3;
+  --dark-color: #79e0ee;
+  --max-width: 1100px;
+}
+
+.category {
+  --friendship-color: #7286d3;
+  --drama-color: #e5e0ff;
+  --romance-color: #b9f3fc;
+  --adult-color: #fd8a8a;
+  --toxicity-color: #65647c;
+  --confrontation-color: #8ea7e9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Navigation */
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+#main-nav {
+  background: transparent;
+  position: sticky;
+  z-index: 2;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-top: 1.5rem;
+}
+
+#main-nav .container {
+  display: grid;
+  grid-template-columns: 3fr 3fr 1fr;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#main-nav .logo {
+  width: 150px;
+  border-radius: 50%;
+}
+
+#main-nav ul {
+  display: flex;
+}
+
+#main-nav ul li a {
+  padding: 0.5rem;
+  justify-self: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+#main-nav ul li a.current {
+  color: #fff;
+}
+
+#main-nav ul li a:hover {
+  color: var(--dark-color);
+}
+
+#main-nav .social {
+  align-items: center;
+  justify-self: center;
+}
+
+#main-nav .social i {
+  color: #fff;
+  margin-right: 1rem;
+}
+
+#main-nav .social i:hover {
+  color: var(--dark-color);
+}
+
+/* Header */
+
+.banner1,
+.banner2,
+.banner3 {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  /* position: absolute; */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: zoom-out 10s linear infinite;
+}
+@keyframes zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.text-box {
+  width: 600px;
+  position: absolute;
+  top: 350px;
+  left: 100px;
+  color: #fff;
+}
+
+.text-box h1 {
+  margin-bottom: 40px;
+}
+
+.text-box p {
+  font-size: 14px;
+  line-height: 15px;
+  margin-top: 80px;
+}
+
+.text-box span {
+  background: red;
+  height: 1px;
+  width: 100px;
+  position: absolute;
+  left: 0;
+}
+
+.banner1 {
+  animation: slide1 12s linear infinite;
+}
+
+.banner2 {
+  animation: slide2 12s linear infinite;
+}
+
+.banner3 {
+  animation: slide3 12s linear infinite;
+}
+
+@keyframes slide1 {
+  0% {
+    visibility: visible;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+@keyframes slide2 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: visible;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes slide3 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+/* Home Article */
+
+#home-articles {
+  position: sticky;
+  margin-top: 38rem;
+  text-align: center;
+}
+
+#home-articles .container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 2rem;
+}
+
+.container h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #071952;
+  margin-bottom: 1rem;
+}
+
+.category {
+  display: inline-block;
+  color: #fff;
+  font-size: 0.55rem;
+  text-transform: uppercase;
+  padding: 0.4rem 0.6rem;
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+}
+
+.category a {
+  color: #fff !important;
+}
+
+.category-friendship {
+  background: var(--friendship-color);
+}
+.category-drama {
+  background: var(--drama-color);
+}
+.category-romance {
+  background: var(--romance-color);
+}
+.category-adult {
+  background: var(--adult-color);
+}
+.category-toxicity {
+  background: var(--toxicity-color);
+}
+.category-confrontation {
+  background: var(--confrontation-color);
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8e8ee;
+  padding: 1rem;
+}
+
+.card img {
+  width: 150px;
+  margin-right: 1rem;
+}
+
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark a,
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3,
+.bg-primary a,
+.bg-secondary h1,
+.bg-secondary h2,
+.bg-secondary h3,
+.bg-secondary a {
+  color: #222;
+}
+
+#home-articles .articles-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+/* Gallery Container */
+
+.gallery-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 35px;
+  background: linear-gradient(to left top, #031a9a, #8b53ff);
+  margin-top: 5rem;
+}
+
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+}
+.wrapper i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active {
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapper i:first-child {
+  left: -22px;
+}
+.wrapper i:last-child {
+  right: -22px;
+}
+.wrapper .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card1 {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card1, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card1 {
+  scroll-snap-align: start;
+  height: 342px;
+  list-style: none;
+  background: #fff;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.carousel .card1 .img {
+  background: #8b53ff;
+  height: 148px;
+  width: 148px;
+  border-radius: 50%;
+}
+.card1 .img img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+.carousel .card1 h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+}
+.carousel .card1 span {
+  color: #6a6d78;
+  font-size: 1.31rem;
+}
+
+/* About Me Section */
+
+.line {
+  background: #f8f988;
+  height: 2px;
+  width: 300px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  justify-self: center;
+}
+
+.aboutme-section {
+  margin-top: 5rem;
+}
+
+.aboutme-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-container img {
+  width: 250px;
+}
+
+.text-container {
+  margin-top: 3rem;
+  margin-right: 1rem;
+  /* text-align: center; */
+}
+
+.text-container h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  color: #071952;
+}
+
+.text-container p {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  color: #071952;
+}
+
+/* Footer */
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 3rem;
+}
+
+footer .social {
+  display: flex;
+  justify-content: end;
+}
+
+footer .social i {
+  color: #071952;
+  margin-right: 1rem;
+}
+
+footer .social i:hover {
+  color: var(--dark-color);
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+
+  #home-articles .articles-container {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+  }
+
+  .aboutme-container {
+    grid-template-columns: 1fr;
+  }
+}
