@@ -50,7 +50,7 @@
   
   #main-nav .container {
     display: grid;
-    grid-template-columns: 3fr 3fr 1fr;
+    grid-template-columns: 3fr 3fr 3fr;
     padding: 1rem;
     align-items: center;
     justify-content: center;
@@ -250,7 +250,31 @@
     color: var(--dark-color);
   }
 
+  @media screen and (max-width: 900px) {
+
+    #main-nav {
+      margin-left: 2.5rem;
+      margin-right: 2.5rem;
+      margin-top: 2rem;
+    }
+  
+    #main-nav .container {
+      display: grid;
+      grid-template-columns: 1fr
+    }
+
+  }
+
   @media screen and (max-width: 600px) {
+
+    #main-nav {
+      margin-top: 2rem;
+    }
+  
+    #main-nav .container {
+      display: grid;
+      grid-template-columns: 1fr
+    }
   
     footer {
       grid-template-columns: 1fr;
