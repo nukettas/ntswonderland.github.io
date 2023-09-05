@@ -49,7 +49,7 @@ ul {
 
 #main-nav .container {
   display: grid;
-  grid-template-columns: 3fr 3fr 1fr;
+  grid-template-columns: 3fr 3fr 3fr;
   padding: 1rem;
   align-items: center;
   justify-content: center;
@@ -481,11 +481,38 @@ footer .social i:hover {
 }
 
 @media screen and (max-width: 900px) {
+
+  #main-nav {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  #main-nav .container {
+    display: grid;
+    grid-template-columns: 1fr
+  }
+
   .wrapper .carousel {
     grid-auto-columns: calc((100% / 2) - 9px);
   }
 }
 @media screen and (max-width: 600px) {
+
+  #home-articles {
+    margin-top: 6rem;
+  }
+
+  #main-nav {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  #main-nav .container {
+    display: grid;
+    grid-template-columns: 1fr
+  }
   .wrapper .carousel {
     grid-auto-columns: 100%;
   }
