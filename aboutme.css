@@ -36,7 +36,7 @@
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     /* margin-left: 4rem;
     margin-right: 4rem; */
-    padding-left: 4rem; 
+    padding-left: 3rem; 
   }
   
   #main-nav .container {
@@ -284,6 +284,10 @@
     #main-nav .container {
       display: grid;
       grid-template-columns: 1fr
+    }
+
+    .page-container {
+      grid-template-columns: 1fr;
     }
   
     footer {

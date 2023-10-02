@@ -15,6 +15,9 @@
     --adult-color: #fd8a8a;
     --toxicity-color: #65647c;
     --confrontation-color: #8ea7e9;
+    --writingtips-color: #BEADFA;
+    --craftandcreativity-color: #FFC6AC;
+    --digitalmarketing-color: #FF9B9B;
   }
   
   * {
@@ -150,6 +153,20 @@
   .category-confrontation {
     background: var(--confrontation-color);
   }
+
+  .category-writingtips {
+    background: var(--writingtips-color);
+  }
+
+  .category-craftandcreativity {
+    background: var(--craftandcreativity-color);
+  }
+
+  .category-digitalmarketing {
+    background: var( --digitalmarketing-color);
+  }
+
+ 
   
   .card {
     display: flex;

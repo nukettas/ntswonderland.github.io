@@ -216,6 +216,10 @@
     #main-nav {
       margin-top: 2rem;
     }
+
+    .form-container {
+      grid-template-columns: 1fr;
+    }
   
     #main-nav .container {
       display: grid;
