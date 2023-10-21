@@ -31,8 +31,8 @@ body {
 
 a {
   display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: #fff;
   text-decoration: none;
 }
@@ -75,7 +75,7 @@ ul {
 #main-nav ul {
   display: grid;
   justify-content: center;
-    align-items: center;
+  align-items: center;
 }
 
 #main-nav ul li a {
@@ -418,6 +418,13 @@ ul {
   font-size: 1.56rem;
   margin: 30px 0 5px;
 }
+
+.carousel .card1 p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  width: 300px;
+}
+
 .carousel .card1 span {
   color: #6a6d78;
   font-size: 1.31rem;
@@ -496,7 +503,6 @@ footer .social i:hover {
 }
 
 @media screen and (max-width: 900px) {
-
   #main-nav {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
@@ -521,9 +527,17 @@ footer .social i:hover {
   }
 }
 @media screen and (max-width: 600px) {
-
   #home-articles {
-    margin-top: 6rem;
+    /* margin-top: 6rem; */
+    display: none;
+  }
+
+  .gallery-container {
+    margin-top: 8rem;
+  }
+
+  .text-box p {
+    display: none;
   }
 
   #main-nav {
